@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REBOOT Atelier</title>
+  <link href="https://fonts.googleapis.com/css?family=Lexend+Giga:300,500,700|Urbanist:300,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="/assets/favicon.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+</head>
+
+<body>
+  <div class="logo-container">
+    <img src="/assets/logo.png" alt="REBOOT Atelier">
+  </div>
+  <section class="features section" id="features">
+    <div class="feature">
+      <div class="container">
+        <h2>LA MODE PENSÉE PAR CELLES QUI LA FAÇONNENT</h2>
+        <p>Formées dans les ateliers les plus prestigieux, Pauline et Angélique insufflent à REBOOT une vision
+          audacieuse
+          du luxe contemporain.</p>
+
+        <p>Ici, chaque création est un équilibre subtil entre savoir-faire d'exception et innovation responsable. Du
+          prêt-à-porter vibrant aux pièces personnalisées, jusqu'aux ateliers exclusifs, REBOOT célèbre la femme moderne
+          qui s'affirme avec style et conviction.</p>
+
+        <p>Plus qu'une marque, REBOOT est une expérience, une invitation à vivre la mode autrement, avec transparence,
+          engagement et une élégance résolument actuelle.</p>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="container">
+        <h2>MADE FOR YOU</h2>
+        <p><em>Collection prêt-à-porter</em></p>
+        <div class="feature-content">
+          <p>Explorez le monde du prêt-à-porter avec REBOOT Atelier. Notre vaste gamme se compose de vêtements élégants
+            et
+            confortables, adaptés à chaque occasion. Découvrez des pièces uniques qui allient style et qualité, vous
+            permettant de vous exprimer pleinement à travers votre tenue.</p>
+        </div>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="container">
+        <h2>MADE BY YOU</h2>
+        <p><em>Collection custom</em></p>
+        <div class="feature-content">
+          <p>Avec les vêtements personnalisés de chez REBOOT Atelier, chaque pièce devient unique. Choisissez votre
+            style et
+            faites ajouter une touche personnelle à vos tenues. Profitez d'un service sur mesure qui transforme vos
+            idées en
+            réalité vestimentaire.</p>
+        </div>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="container">
+        <h2>MADE WITH YOU</h2>
+        <p><em>Collection couture</em></p>
+        <div class="feature-content">
+          <p>Chez REBOOT, la couture devient une collaboration intime. Accompagnées de Pauline et Angélique, imaginez
+            une
+            pièce unique, façonnée selon vos envies, votre corps, votre histoire. Un savoir-faire d'exception, hérité
+            des
+            plus grandes maisons, au service d'une création sur mesure qui vous ressemble, jusqu'au dernier point.</p>
+        </div>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="container">
+        <h2>MADE TOGETHER</h2>
+        <p><em>Crées, apprends, reproduis</em></p>
+        <div class="feature-content">
+          <p>Chez REBOOT, on croit en la mode qui se vit et se comprend.</p>
+          <p>Nos ateliers couture, en petit groupe, te permettent de recréer ton vêtement préféré ou de t'initier à des
+            techniques rares de la couture haut de gamme.</p>
+          <p>Que tu sois débutante ou passionnée, tu repars avec du savoir, une pièce unique, et la fierté de l'avoir
+            fait
+            toi-même.</p>
+        </div>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="container">
+            <h2>NOUS TROUVER</h2>
+        <div class="location-grid">
+          <div class="location-info">
+            <p><strong>Adresse</strong></p>
+            <p>11 rue de l'épine<br>
+              67000 Strasbourg</p>
+            <p><strong>Horaires d'ouverture</strong></p>
+            <p>Lundi - Samedi : 10h - 19h</p>
+            <p><strong>Contact</strong></p>
+            <p>Email : <a href="mailto:contact@reboot-atelier.fr">contact@reboot-atelier.fr</a></p>
+          </div>
+          <div class="location-map">
+            <div id="map"></div>
+            <div class="map-button-container">
+              <a href="https://www.google.com/maps/search/?api=1&query=11+rue+de+l%27épine+67000+Strasbourg" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="nav-button">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIi8+PHBvbHlsaW5lIHBvaW50cz0iMTIgMTYgMTYgMTIgMTIgOCIvPjxsaW5lIHgxPSI4IiB5MT0iMTIiIHgyPSIxNiIgeTI9IjEyIi8+PC9zdmc+" 
+                     alt="Navigation icon" 
+                     style="width: 20px; height: 20px; vertical-align: middle; margin-right: 8px;">
+                Itinéraire vers la boutique
+              </a>
+            </div>
+          </div>
+        </div>
+        <script>
+          var map = L.map('map').setView([48.58241, 7.74547], 15);
+          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            minZoom: 10,
+            attribution: '© OpenStreetMap contributors',
+            type: 'map'
+          }).addTo(map);
+          L.marker([48.58241, 7.74547])
+            .addTo(map)
+            .bindPopup('REBOOT Atelier<br>11 rue de l\'épine<br>67000 Strasbourg')
+            .openPopup();
+        </script>
+      </div>
+    </div>
+  </section>
+  <footer>
+    &copy; 2025 REBOOT. All rights reserved.
+  </footer>
+</body>
+
+</html>
