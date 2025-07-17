@@ -10,11 +10,9 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="assets/favicon.png">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-    crossorigin=""/>
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-    crossorigin=""></script>
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
 
 <body>
@@ -91,27 +89,32 @@
     </div>
     <div class="feature">
       <div class="container">
-            <h2>NOUS TROUVER</h2>
+        <h2>NOUS TROUVER</h2>
         <div class="location-grid">
           <div class="location-info">
-            <p><strong>Adresse</strong></p>
-            <p>11 rue de l'épine<br>
-              67000 Strasbourg</p>
-            <p><strong>Horaires d'ouverture</strong></p>
-            <p>Lundi - Samedi : 10h - 19h</p>
-            <p><strong>Contact</strong></p>
-            <p>Email : <a href="mailto:contact@reboot-atelier.fr">contact@reboot-atelier.fr</a></p>
+            <div class="location-info-content">
+              <p class="location-info-content-header">Adresse</p>
+              <p class="location-info-content-text">11 rue de l'épine<br>
+                67000 Strasbourg</p>
+            </div>
+            <div class="location-info-content">
+              <p class="location-info-content-header">Horaires d'ouverture</p>
+              <p class="location-info-content-text">Lundi - Samedi : 10h - 19h</p>
+            </div>
+            <div class="location-info-content">
+              <p class="location-info-content-header">Contact</p>
+              <p class="location-info-content-text">Email : <a href="mailto:contact@reboot-atelier.fr">contact@reboot-atelier.fr</a></p>
+              <p class="location-info-content-text">Téléphone : <a href="tel:+33666666666">+33 6 66 66 66 66</a></p>
+            </div>
           </div>
           <div class="location-map">
             <div id="map"></div>
             <div class="map-button-container">
-              <a href="https://www.google.com/maps/search/?api=1&query=11+rue+de+l%27épine+67000+Strasbourg" 
-                 target="_blank" 
-                 rel="noopener noreferrer" 
-                 class="nav-button">
-                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIi8+PHBvbHlsaW5lIHBvaW50cz0iMTIgMTYgMTYgMTIgMTIgOCIvPjxsaW5lIHgxPSI4IiB5MT0iMTIiIHgyPSIxNiIgeTI9IjEyIi8+PC9zdmc+" 
-                     alt="Navigation icon" 
-                     style="width: 20px; height: 20px; vertical-align: middle; margin-right: 8px;">
+              <a href="https://www.google.com/maps/search/?api=1&query=11+rue+de+l%27épine+67000+Strasbourg"
+                target="_blank" rel="noopener noreferrer" class="nav-button">
+                <img
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIi8+PHBvbHlsaW5lIHBvaW50cz0iMTIgMTYgMTYgMTIgMTIgOCIvPjxsaW5lIHgxPSI4IiB5MT0iMTIiIHgyPSIxNiIgeTI9IjEyIi8+PC9zdmc+"
+                  alt="Navigation icon" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 8px;">
                 Itinéraire vers la boutique
               </a>
             </div>
